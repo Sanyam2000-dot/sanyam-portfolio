@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Component Library</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -24,33 +25,33 @@
     <hr>
     <h2>@containers</h2>
     <h3>@fluid containers</h3>
-    <div>these containers are block elements which goes from starting to end </div>
+    <div class="container fluid-container">these containers are block elements which goes from starting to end </div>
     <h3>@center containers</h3>
-    <div>these containers are block elements which remains in the center</div>
+    <div class="container center-container">these containers are block elements which remains in the center</div>
     <hr>
     <h2>@links</h2>
     <div>
-        <a href="/">primary link</a>
-        <a href="/">secondary link</a>
+        <a href="/" class="link primary-link">primary link</a>
+        <a href="/" class="link secondary-link">secondary link</a>
     </div>
     <hr>
     <h2>@list</h2>
     <div>This is an unordered list
-        <ul>
+        <ul class="list-non-bullet">
             <li>Music</li>
             <li>Cricket</li>
             <li>Movies</li>
         </ul>
     </div>
     <div>This is an inline list
-        <ul>
-            <li>Bread</li>
-            <li>butter</li>
-            <li>Cheese</li>
+        <ul class="list-non-bullet">
+            <li class="list-item-inline">Bread</li>
+            <li class="list-item-inline">butter</li>
+            <li class="list-item-inline">Cheese</li>
         </ul>
     </div>
     <div>This is a reverse ordered list
-        <ol>
+        <ol reversed>
             <li>Tiger</li>
             <li>Royal canin</li>
             <li>Calcium bones</li>
@@ -58,37 +59,43 @@
     </div>
     <hr>
     <h2>@navbar</h2>
-    <div>
-        <nav>
-            <a href="/">Home</a>
-            <a href="/">About</a>
-            <a href="/">Products</a>
-        </nav>
-    </div>
+    <nav class="navigation">
+        <div class="brand">imbrand</div>
+        <ul class="list-non-bullet">
+            <li class="list-item-inline"><a class="link link-active" href="/">Home</a></li>
+            <li class="list-item-inline"><a class="link" href="/">About</a></li>
+            <li class="list-item-inline"><a class="link" href="/">Products</a></li>
+        </ul>
+    </nav>
     <hr>
     <h2>@headings</h2>
-    <header>
-        <img src="https://media-exp1.licdn.com/dms/image/C5103AQEa9OCXf6Jidw/profile-displayphoto-shrink_400_400/0/1586493476926?e=1616025600&v=beta&t=kggxEFCNg47YNA4uC70-5byJ7-LlJ31ar3beG-0tkjU">
-        <p>This is heading in the image</p>
+    <header class="hero">
+        <img class="hero-image" src="https://media-exp1.licdn.com/dms/image/C5103AQEa9OCXf6Jidw/profile-displayphoto-shrink_400_400/0/1586493476926?e=1616025600&v=beta&t=kggxEFCNg47YNA4uC70-5byJ7-LlJ31ar3beG-0tkjU">
+        <h1 class="hero-heading">This is heading in the image</h1>
     </header>
     <hr>
     <h2>@section</h2>
-    <section>
-        <h3>white background</h3>
-        <p>This is the section with white backgroud</p>
+    <section class="section">
+        <div class="center-container">
+            <h1>white background</h1>
+            <p>This is the section with white backgroud</p>
+        </div>
     </section>
-    <section>
-        <h3>gray background</h3>
-        <p>This is the section with the gray backgroud</p>
+    <section class="section off-white">
+        <div class="center-container">
+            <h1>gray background</h1>
+            <p>MDN is an open source resource where anyone can add and edit contents. You don't need to be a programmer or know a lot about technologies. There are plenty of things that need to be done, from the simple (proofreading and correcting typos)
+                to the complex (writing API documentation).</p>
+        </div>
     </section>
     <hr>
     <h2>@footer</h2>
-    <footer>
-        <div>This contains links to all my socials</div>
-        <ul>
-            <li>Linkedin</li>
-            <li>Twitter</li>
-            <li>Instagram</li>
+    <footer class="footer">
+        <div class="footer-header">This contains links to all my socials</div>
+        <ul class="social-links list-non-bullet">
+            <li class="list-item-inline"><a class="link lsit=" href="/">LinkedIN</a>
+                <li class="list-item-inline"><a class="link" href="/">GitHub</a></li>
+                <li class="list-item-inline"><a class="link" href="/">Twitter</a></li>
         </ul>
     </footer>
 </body>
