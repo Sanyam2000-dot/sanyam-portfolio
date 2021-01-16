@@ -1,13 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
 :root {
-    --primary-color: #34D399;
+    --primary-color: #10B981;
     --dark-gray: #6B7280;
-    --off-white: #E5E7EB;
+    --off-white: #A7F3D0;
+    --bg--color: #ECFDF5;
 }
 
-body {
+
+/* body {
     font-family: 'Source Serif Pro', serif;
     margin: 0px;
+} */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+    background-color: var(--bg--color);
 }
 
 .container {
@@ -26,7 +35,7 @@ hr {
 
 .link {
     text-decoration: none;
-    padding: 0rem 1rem;
+    padding: 1rem 2rem;
 }
 
 .primary-link {
@@ -37,8 +46,8 @@ hr {
 
 .secondary-link {
     color: var(--primary-color);
-    border-radius: 1rem;
-    margin: solid 1px var(--primary-color);
+    border: solid 1px var(--primary-color);
+    border-radius: 0.5rem;
 }
 
 .list-non-bullet {
@@ -53,12 +62,13 @@ hr {
 .navigation {
     background-color: var(--primary-color);
     color: white;
-    border-radius: 1rem;
+    border-bottom-left-radius: 1rem;
 }
 
 .navigation .brand {
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     font-weight: bolder;
+    font-size: 2rem;
 }
 
 .navigation .list-non-bullet {
@@ -71,7 +81,7 @@ hr {
 }
 
 .navigation .link-active {
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 .hero {
@@ -85,8 +95,9 @@ hr {
 }
 
 .hero .hero-heading {
-    color: var(--dark-gray);
+    color: black;
     text-align: center;
+    font-size: 28px;
 }
 
 .section h1 {
@@ -99,7 +110,7 @@ hr {
 
 .footer {
     background-color: var(--primary-color);
-    padding: 0rem 1rem;
+    padding: 1.5rem 1rem;
     color: white;
     text-align: center;
     border-top-right-radius: 1rem;
@@ -108,4 +119,5 @@ hr {
 
 .footer .link {
     color: white;
+    font-weight: bold;
 }
