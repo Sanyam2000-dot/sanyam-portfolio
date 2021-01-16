@@ -35,7 +35,7 @@ hr {
 
 .link {
     text-decoration: none;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
 }
 
 .primary-link {
@@ -56,7 +56,7 @@ hr {
 
 .list-item-inline {
     display: inline;
-    padding: 0rem 1rem;
+    padding: 0rem;
 }
 
 .navigation {
@@ -89,7 +89,7 @@ hr {
 }
 
 .hero .hero-image {
-    max-width: 500px;
+    max-width: 350px;
     display: block;
     margin: auto;
 }
